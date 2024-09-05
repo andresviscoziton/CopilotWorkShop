@@ -1,75 +1,67 @@
-### Plan
-
-1. Crear un archivo `README.md`.
-2. Incluir una sección de introducción.
-3. Explicar cómo probar los archivos `.py`.
-4. Incluir ejemplos de buen y mal prompting para GitHub Copilot.
-
-### Código
-
 ```markdown
-# Guía para Probar Archivos `.py` y Buenas Prácticas de Prompting
+# Guide to Testing `.py` Files and Good Prompting Practices
 
-## Introducción
+## Introduction
 
-Este documento explica cómo probar los archivos `.py` y proporciona ejemplos de buenas y malas prácticas de prompting para GitHub Copilot.
+This document explains how to test `.py` files and provides examples of good and bad prompting practices for GitHub Copilot.
 
-## Cómo Probar Archivos `.py`
+## How to Test `.py` Files
 
-Para probar los archivos `.py`, sigue estos pasos:
+To test `.py` files, follow these steps:
 
-1. Abre una terminal en el directorio donde se encuentran los archivos.
-2. Ejecuta el archivo que deseas probar usando el comando `python nombre_del_archivo.py`.
+1. Open a terminal in the directory where the files are located.
+2. Run the file you want to test using the command `python filename.py`.
 
-Por ejemplo, para probar `m_p_1.py`, usa el siguiente comando:
+For example, to test `m_p_1.py`, use the following command:
 
 ```sh
 python m_p_1.py
 ```
 
-## Buenas Prácticas de Prompting
+## Good Prompting Practices
 
-### Ejemplo de Buen Prompting ([`b_p_1.py`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fandy%2FPYTHON%2FZITON%2FWorkShop%2FCopilotWorkShop%2Fb_p_1.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%229d9bd4fb-cf38-453e-9ba4-cecb4cc3c059%22%5D "/home/andy/PYTHON/ZITON/WorkShop/CopilotWorkShop/b_p_1.py"))
+### Example of Good Prompting ([`b_p_1.py`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fandy%2FPYTHON%2FZITON%2FWorkShop%2FCopilotWorkShop%2Fb_p_1.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%229d9bd4fb-cf38-453e-9ba4-cecb4cc3c059%22%5D "/home/andy/PYTHON/ZITON/WorkShop/CopilotWorkShop/b_p_1.py"))
 
-Un buen prompting es claro y específico, proporcionando suficiente contexto para que GitHub Copilot entienda lo que se necesita.
+Good prompting is clear and specific, providing enough context for GitHub Copilot to understand what is needed.
 
 ```python
 # b_p_1.py
 
-def contar_palabras(texto):
+def count_words(text):
     """
-    Cuenta el número de palabras en un texto dado.
+    Counts the number of words in a given text.
 
     Args:
-    texto (str): El texto a analizar.
+    text (str): The text to analyze.
 
     Returns:
-    int: El número de palabras en el texto.
+    int: The number of words in the text.
     """
-    palabras = texto.split()
-    return len(palabras)
+    words = text.split()
+    return len(words)
 
-# Ejemplo de uso
-texto = "Hola, bienvenido al taller de GitHub Copilot."
-numero_de_palabras = contar_palabras(texto)
-print(f"Número de palabras: {numero_de_palabras}")
+# Usage example
+text = "Hello, welcome to the GitHub Copilot workshop."
+number_of_words = count_words(text)
+print(f"Number of words: {number_of_words}")
 ```
 
-### Ejemplo de Mal Prompting ([`m_p_1.py`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fandy%2FPYTHON%2FZITON%2FWorkShop%2FCopilotWorkShop%2Fm_p_1.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%229d9bd4fb-cf38-453e-9ba4-cecb4cc3c059%22%5D "/home/andy/PYTHON/ZITON/WorkShop/CopilotWorkShop/m_p_1.py"))
+### Example of Bad Prompting ([`m_p_1.py`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fandy%2FPYTHON%2FZITON%2FWorkShop%2FCopilotWorkShop%2Fm_p_1.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%229d9bd4fb-cf38-453e-9ba4-cecb4cc3c059%22%5D "/home/andy/PYTHON/ZITON/WorkShop/CopilotWorkShop/m_p_1.py"))
 
-Un mal prompting es vago y carece de contexto, lo que puede llevar a resultados incorrectos o inesperados.
+Bad prompting is vague and lacks context, which can lead to incorrect or unexpected results.
 
 ```python
 # m_p_1.py
 
-def contar_palabras(texto):
-    palabras = texto.split()
-    return len(palabras)
+def count_words(text):
+    words = text.split()
+    return len(words)
 
-# Ejemplo de uso
-texto = "Hola, bienvenido al taller de GitHub Copilot."
-numero_de_palabras = contar_palabras(texto)
-print(f"Número de palabras: {numero_de_palabras}")
+# Usage example
+text = "Hello, welcome to the GitHub Copilot workshop."
+number_of_words = count_words(text)
+print(f"Number of words: {number_of_words}")
 ```
 
-En el ejemplo de mal prompting, la falta de documentación y contexto puede dificultar que GitHub Copilot proporcione sugerencias precisas.
+In the bad prompting example, the lack of documentation and context can make it difficult for GitHub Copilot to provide accurate suggestions.
+

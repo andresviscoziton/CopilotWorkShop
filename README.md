@@ -1,4 +1,3 @@
-```markdown
 # Guide to Testing `.py` Files and Good Prompting Practices
 
 ## Introduction

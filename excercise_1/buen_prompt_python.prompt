@@ -1,7 +1,0 @@
-# Buen uso de prompting
-# Función para contar palabras en una cadena de texto
-# Entrada: un string 'texto'
-# Salida: un diccionario donde las claves son las palabras y los valores son el número de veces que aparece cada palabra
-
-def contar_palabras(texto):
-    pass

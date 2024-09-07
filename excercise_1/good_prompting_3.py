@@ -19,6 +19,5 @@ GROUP BY user_age;
     # FROM users
     # GROUP BY user_age;
     #
-    # This query will give the same result as the original query but will be more efficient.
     #
     

@@ -1,0 +1,17 @@
+Exercise 3: "Data Scraping" (Complex)
+Prompt:
+
+Setting Up:
+
+"Install the required libraries: requests and BeautifulSoup."
+"Write a Python function that sends a GET request to a news website URL."
+HTML Parsing:
+
+"Use BeautifulSoup to parse the HTML content returned by the GET request."
+"Write a function that extracts the titles of all news articles from the page."
+Save to CSV:
+
+"Write a function that saves the extracted titles into a CSV file. Include a header row."
+Error Handling:
+
+"Add error handling to manage network issues, missing elements, or parsing errors."

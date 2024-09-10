@@ -1,0 +1,14 @@
+Exercise 1: "Simple Calculator" (Easy)
+Prompt:
+
+Basic Operations:
+
+"Create a Python function that performs addition of two numbers."
+"Now create another function that performs subtraction of two numbers."
+"Add a function for multiplication."
+"Finally, write a function for division. Make sure it handles division by zero correctly."
+User Interface:
+
+"Write a simple command-line interface that allows the user to choose an operation (add, subtract, multiply, divide) and input two numbers."
+"Use input() to take user input and print the result using the corresponding function."
+

@@ -1,0 +1,16 @@
+Exercise 2: "Text Analysis" (Medium)
+Prompt:
+
+Word Count and Frequency:
+
+"Write a Python function that counts the total number of words in a given string."
+"Create another function to calculate the frequency of each word in the string."
+"Display the frequencies in a sorted manner, from most frequent to least frequent."
+Finding Longest and Shortest Words:
+
+"Write a function that finds the longest word in the input string."
+"Now create another function that finds the shortest word."
+"Print both the longest and shortest words, along with their lengths."
+Integration:
+
+"Combine all functions into a single script that accepts text input from the user and prints the word count, frequency, and the longest and shortest words."

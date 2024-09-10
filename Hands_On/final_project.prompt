@@ -1,0 +1,23 @@
+Final Mini Project: "Interactive Dashboard with Streamlit"
+Prompt:
+
+Project Setup:
+
+"Create a new Python file for a Streamlit app."
+"Write the initial boilerplate code to set up a Streamlit app."
+Fetching Data:
+
+"Write a function that fetches historical stock price data from a financial API (e.g., Yahoo Finance or Alpha Vantage)."
+"Use Copilot suggestions to optimize the function and handle API rate limits."
+Creating Visualizations:
+
+"Use Streamlit to create interactive line charts for the stock prices."
+"Add a sidebar widget to let users select which stock to display."
+User Interface Enhancements:
+
+"Add a date range selector to filter the displayed data."
+"Use Copilot to suggest enhancements for the UI, such as text formatting and layout improvements."
+Final Touches:
+
+"Deploy the app locally and test for functionality."
+"Ensure the app is fully responsive and handles user inputs effectively."

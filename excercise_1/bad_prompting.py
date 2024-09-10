@@ -1,9 +1,3 @@
-
-create a xxx fn
-
-
-you are a preg
-
 # def count_words(text):
 #     words = text.split()
 #     return len(words)

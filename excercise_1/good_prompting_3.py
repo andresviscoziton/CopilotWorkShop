@@ -1,7 +1,3 @@
-SELECT user_id, user_age, COUNT(user_age) AS count_age
-FROM users
-GROUP BY user_age;
-
 # copilot as a Navigator should suggest the best possible code for the given prompt.
 
     #
